@@ -1,7 +1,0 @@
-
-  Practice #1
-https://www.geeksforgeeks.org/machine-learning/understanding-tf-idf-term-frequency-inverse-document-frequency/
-
-
-  Practice #2
-https://www.kaggle.com/code/uthamkanth/beginner-tf-idf-and-cosine-similarity-from-scratch
