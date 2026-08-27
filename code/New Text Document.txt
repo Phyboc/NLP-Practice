@@ -1,0 +1,45 @@
+TreeBank:
+Motivation:
+Before treebanks, rule-based NLP systems were heavily bottlenecked by linguistic ambiguity and lacked a way to calculate probabilistic language patterns at scale. Treebanks provided the large-scale, empirical, human-annotated data required to transition NLP from rigid, manual rule-writing into statistical, machine-learning-based parsing. Treebanks established modern empirical norms like standardized train/test splits and evaluation metrics (e.g., Parseval) so models could be universally compared.
+
+Working Principle Behind it:
+Treebank construction relies on a structured, multi-stage linguistic pipeline:Tokenization and Lemmatization: Text is separated into discrete tokens (words, punctuation) and assigned base forms.Part-of-Speech (POS) Tagging: Each token is tagged with its grammatical class (e.g., Noun, Verb, Adjective).Syntactic Annotation (The Tree Structure): Human annotators map the grammatical relationships of the sentence using tree structures, primarily divided into:Phrase Structure: Groups words into nested constituents like Noun Phrases (NP) and Verb Phrases (VP).Dependency Structure: Captures direct word-to-word relationships, linking modifiers directly to their head words.
+
+Relevance for NLP:
+Treebanks act as the "ground truth" that powers foundational NLP components and downstream applications:Syntactic Parsing: Treebanks allow algorithms to deduce grammatical rules and syntax trees from data, which helps resolve sentence-level ambiguities.Machine Translation: By understanding the structural transfer from one language's treebank to another, models can produce much more accurate translations.Semantic Role Labeling: Treebanks train models to recognize "who did what to whom," establishing context and underlying meaning.
+
+URL:
+https://catalog.ldc.upenn.edu/LDC99T42
+
+PropBank:
+Motivation:
+Before PropBank, syntactic treebanks (like mapping parts of speech and phrases) were limited because they couldn't capture the underlying meaning of an action. The motivation was to create a large-scale, consistent training dataset that links surface-level syntax (e.g., subject, object) to deeper semantic roles (e.g., agent, patient) across different ways of phrasing the same event.
+
+Working Principle behind it:
+PropBank annotates texts based on the predicate (the verb) and its associated arguments. 
+
+Predicates & Framesets: Each verb in the corpus has an associated "frameset" in an XML frame file. This file defines the different senses of the verb. 
+
+Core Arguments: Numbered tags—from ARG0 to ARG5—represent core participants in the action. For example, ARG0 usually represents the agent (doer) and ARG1 the patient (undergoer). 
+
+Adjunctive Arguments: Modifier tags—such as ARGM-TMP (Time), ARGM-LOC (Location), and ARGM-MNR (Manner)—are used consistently across all verbs to provide additional context. 
+
+Relevance to NLP:
+PropBank is considered a cornerstone resource for Natural Language Processing for several reasons: 
+Semantic Role Labeling (SRL): PropBank served as the primary training and testing data for developing statistical and machine learning models for SRL—a core NLP task essential for machine translation, question answering, and information extraction. 
+
+Generalization: By distinguishing between different senses of a word and standardizing roles, NLP systems can better understand the core meaning of a sentence regardless of how it is syntactically structured. 
+
+Cross-lingual NLP: PropBank principles have been extended into multilingual projects, facilitating cross-lingual semantic parsing and unified multilingual NLP tasks. 
+
+URL:
+https://propbank.github.io/
+
+WordNet:
+Motivation:
+Standard dictionaries organize words alphabetically, ignoring semantic relationships. The creators of WordNet wanted to build a database consistent with human psychological models of conceptual knowledge, allowing systems to understand meanings rather than just literal character strings.
+Working Principle:
+WordNet operates as a directed graph where nodes are concepts and edges are relations:Synsets: Words are grouped into sets of synonyms that represent a single conceptual idea (e.g., {car, automobile, motorcar}).Gloss & Examples: Each synset includes a brief definition and example sentences.Semantic Relations: Synsets are connected through relationships like:Hypernymy / Hyponymy: Is-a / subclass hierarchies (e.g., dog is a hyponym of animal).Meronymy: Part-whole relationships (e.g., wheel is a part of a car).Antonymy: Opposites.
+Relevance for NLP:
+WordNet is a fundamental resource in natural language processing (NLP) for several reasons:Word Sense Disambiguation (WSD): It helps algorithms determine the exact meaning of an ambiguous word in context (e.g., identifying whether "bank" refers to a financial institution or a riverbed).Semantic Similarity: NLP models use WordNet to calculate how closely related two concepts are by measuring the distance between them in the graph.Query Expansion & Information Retrieval: Search engines utilize WordNet synonyms to broaden searches and retrieve relevant results based on user intent rather than just exact keyword matches.
+URL:
