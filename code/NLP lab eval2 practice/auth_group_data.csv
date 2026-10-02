@@ -1,0 +1,7 @@
+id,name,role,department,location
+1,bike_admin,admin,operations,Bengaluru
+2,sales_manager,manager,sales,Hyderabad
+3,inventory_staff,staff,inventory,Coimbatore
+4,finance_officer,officer,finance,Mysuru
+5,customer_support,support,customer_service,Kochi
+6,service_manager,manager,service,Bengaluru
