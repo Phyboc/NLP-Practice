@@ -1,0 +1,32 @@
+I O
+want O
+to O
+buy O
+a O
+Sony B-ORG
+PlayStation B-PROD
+5 I-PROD
+Pro I-PROD
+online O
+. O
+
+The O
+retailer O
+Best B-ORG
+Buy I-ORG
+is O
+selling O
+it O
+for O
+699.99 B-MONEY
+USD I-MONEY
+. O
+
+Shipping O
+to O
+New B-LOC
+York I-LOC
+takes O
+three B-CARDINAL
+days O
+. O
